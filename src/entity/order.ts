@@ -13,8 +13,8 @@ class Order {
        this.validate();
        
     }
-    total(): number {
-        return this._items.reduce((acc, item) => acc + item.price, 0);
+    ttotal(): number {
+        return this._items.reduce((acc, item) => acc + item.orderItemTotal(), 0);
     }
     validate(): void {
         if (this._id.length === 0) {
