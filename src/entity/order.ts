@@ -1,4 +1,4 @@
-import type { OrderItem } from "./order_item.js";
+import type  OrderItem  from "./order_item.js";
 
 class Order {
     private _id: string;

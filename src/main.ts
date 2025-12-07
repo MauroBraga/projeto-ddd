@@ -1,7 +1,7 @@
 import Address from "./entity/address.js";
 import Customer from "./entity/customer.js";
 import Order from "./entity/order.js";
-import { OrderItem } from "./entity/order_item.js";
+
 
 /*
 let customer = new Customer("1", "Customer 1");

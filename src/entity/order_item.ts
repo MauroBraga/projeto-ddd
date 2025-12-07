@@ -1,4 +1,4 @@
-export class OrderItem {
+export default class OrderItem {
     private _id: string;
     private _name: string;
     private _price: number;
@@ -47,4 +47,8 @@ export class OrderItem {
     get quantity(): number {
         return this._quantity;
     }
+
+    get productId(): string {
+        return this._productId;
+    }   
 }

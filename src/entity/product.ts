@@ -33,6 +33,10 @@ class Product {
         return this._price;
     }
 
+    set price(value: number) {  
+        this._price = value;
+    }
+
     validate() {
         if (this._id.length === 0) {
             throw new Error('Id is required');
