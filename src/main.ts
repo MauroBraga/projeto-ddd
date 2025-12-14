@@ -1,6 +1,6 @@
-import Address from "./entity/address.js";
-import Customer from "./entity/customer.js";
-import Order from "./entity/order.js";
+import Address from "./domain/entity/address.js";
+import Customer from "./domain/entity/customer.js";
+import Order from "./domain/entity/order.js";
 
 
 /*
