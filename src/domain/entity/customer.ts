@@ -27,6 +27,10 @@ export default class Customer {
         this.validate()
    }
 
+   changeAddress(address: Address): void {
+        this._address = address;
+   }    
+
    activate(): void {
         if (this._address !== undefined) {
             throw new Error("Address is required to activate a customer");
@@ -56,6 +60,10 @@ export default class Customer {
     get isActive(): boolean {
         return this._active;
     }   
+
+    get active(): boolean {
+        return this._active;
+    }
 
     set address(address: Address) {
         this._address = address;
