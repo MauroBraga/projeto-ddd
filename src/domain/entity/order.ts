@@ -29,6 +29,17 @@ class Order {
            
     }
 
+    get id(): string {
+        return this._id;
+    }
+
+    get customerId(): string {
+        return this._customerId;
+    }
+
+    get items(): OrderItem[] {
+        return this._items;
+    }   
     
 }
 

@@ -43,13 +43,7 @@ export default class CustomerRepository implements CustomerRepositoryInterface {
                 customerModel.zipCode,
                 customerModel.city
             );
-            customer.changeAddress(address);
-            if (customerModel.active) {
-                customer.activate();
-            } else {
-                customer.deactivate();
-            }
-            customer.addRewardPoints(customerModel.rewardPoints);
+            customer.address = address;
             return customer;
         });
     }
