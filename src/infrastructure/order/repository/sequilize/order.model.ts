@@ -1,5 +1,5 @@
 import { BelongsTo, Column, ForeignKey, HasMany, Model, PrimaryKey, Table } from "sequelize-typescript";
-import type CustomerModel from "./customer.model";
+import type CustomerModel from "../../../customer/repository/sequilize/customer.model";
 import type OrderItemModel from "./ordem-item.model";
 
 
@@ -12,11 +12,11 @@ export default class OrderModel extends Model{
     @Column
     declare    id: string;
 
-    @ForeignKey(() => require("./customer.model").default)
+    @ForeignKey(() => require("../../../customer/repository/sequilize/customer.model").default)
     @Column
     declare    customer_id: string;
 
-    @BelongsTo(() => require("./customer.model").default)
+    @BelongsTo(() => require("../../../customer/repository/sequilize/customer.model").default)
     declare    customer: CustomerModel;
 
     @HasMany(() => require("./ordem-item.model").default)
