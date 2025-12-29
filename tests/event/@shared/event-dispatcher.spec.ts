@@ -1,9 +1,9 @@
-import EventDispatcher from '../../../src/domain/event/@shared/event-dispatcher';
-import SendEmailWhenProductIsCreatedHandler from '../../../src/domain/event/product/handler/send-email-when-product-is-created.heandler';
-import ProductCreatedEvent from '../../../src/domain/event/product/product-created.event';
-import SendMensagemWhenCustomerIsUpdatedHandler from '../../../src/domain/event/customer/handler/send-mensagem-when-customer-is-updated.heandler ';
-import CustomerCreatedEvent from '../../../src/domain/event/customer/customer-created.event';
-import SendMensagemWhenCustomerIsCreatedHandler from '../../../src/domain/event/customer/handler/send-mensagem-when-customer-is-created.heandler';
+import EventDispatcher from '  ../../../src/domain/@shared/event/event-dispatcher';
+import SendEmailWhenProductIsCreatedHandler  from '../../../src/domain/product/event/handler/send-email-when-product-is-created.heandler';
+import ProductCreatedEvent from '../../../src/domain/product/event/product-created.event';
+import SendMensagemWhenCustomerIsUpdatedHandler from '../../../src/domain/customer/event/handler/send-mensagem-when-customer-is-updated.heandler ';
+import CustomerCreatedEvent from '../../../src/domain/customer/event/customer-created.event';
+import SendMensagemWhenCustomerIsCreatedHandler from '../../../src/domain/customer/event/handler/send-mensagem-when-customer-is-created.heandler';
 
 describe('Domain Event Dispatcher Tests', () => {
     

@@ -1,7 +1,7 @@
 
 import {v4 as uuidv4} from 'uuid';
 import Order from '../entity/order';
-import Customer from '../entity/customer';
+import Customer from '../../customer/entity/customer';
 import OrderItem from '../entity/order_item';
 
 

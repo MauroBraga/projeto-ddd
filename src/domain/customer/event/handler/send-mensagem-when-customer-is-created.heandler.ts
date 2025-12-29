@@ -1,6 +1,5 @@
-import Customer from "../../../entity/customer";
-import EventHandlerIntegerface from "../../@shared/event-handler.interface";
-import CustomerCreatedEvent from  "../customer-created.event";
+import EventHandlerIntegerface from "../../../@shared/event/event-handler.interface";
+import CustomerCreatedEvent from  "../../../customer/event/customer-created.event";
 
 export default class SendMensagemWhenCustomerIsCreatedHandler implements EventHandlerIntegerface<CustomerCreatedEvent> {
     handle(event: CustomerCreatedEvent): void {
