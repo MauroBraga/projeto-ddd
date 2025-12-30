@@ -1,6 +1,6 @@
 import ProductInterface from "./product.interface";
 
-class Product implements ProductInterface { 
+class ProductB implements ProductInterface { 
 
     private _id: string;
     private _name: string;
@@ -52,4 +52,4 @@ class Product implements ProductInterface {
     }
 }
 
-export default Product;
+export default ProductB;
