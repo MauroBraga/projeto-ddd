@@ -22,44 +22,44 @@ export default class Customer {
         }
     }
 
-   changeName(name: string): void {
+    changeName(name: string): void {
         this._name = name;
         this.validate()
-   }
+    }
 
-   changeAddress(address: Address): void {
+    changeAddress(address: Address): void {
         this._address = address;
-   }    
+    }
 
-   activate(): void {
-        if (this._address !== undefined) {
+    activate(): void {
+        if (this._address === undefined) {
             throw new Error("Address is required to activate a customer");
         }
         this._active = true;
-   }
+    }
 
-   deactivate(): void {
+    deactivate(): void {
         this._active = false;
-   }
+    }
 
-   get id(): string {
+    get id(): string {
         return this._id;
-   }
+    }
 
-   get name(): string {
+    get name(): string {
         return this._name;
-   }        
+    }
     get address(): Address {
         return this._address;
     }
 
     get rewardPoints(): number {
         return this._rewardPoints;
-    }   
-    
+    }
+
     get isActive(): boolean {
         return this._active;
-    }   
+    }
 
     get active(): boolean {
         return this._active;
